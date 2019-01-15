@@ -1,0 +1,54 @@
+{
+  "name": "fae-ms-user",
+  "description": "fae-ms-user",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Nam Vuong",
+    "email": "namnv04@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^10.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run eslint && NODE_ENV= npm run jest",
+    "eslint": "eslint src/. test/. --config .eslintrc.json",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "jest": "jest --coverage"
+  },
+  "dependencies": {
+    "@feathersjs/configuration": "^2.0.6",
+    "@feathersjs/errors": "^3.3.6",
+    "@feathersjs/express": "^1.3.1",
+    "@feathersjs/feathers": "^3.3.1",
+    "@feathersjs/socketio": "^3.2.9",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "feathers-mongoose": "^7.2.0",
+    "helmet": "^3.15.0",
+    "mongodb-core": "^3.1.3",
+    "mongoose": "^5.4.4",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
